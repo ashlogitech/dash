@@ -15,22 +15,8 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin/leads/{leadId}', [LeadController::class, 'show']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
+    // Add other admin routes here
+});
