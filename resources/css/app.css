@@ -34,3 +34,63 @@ body, html {
   
   /* Add more styles as needed */
   
+  /* Admin Dashboard Styles */
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #343a40; /* Dark background for the sidebar */
+    color: #fff; /* White text color */
+  }
+  
+  .sidebar .nav-link {
+    color: #fff; /* White text color for links */
+    border-bottom: 1px solid #495057; /* Slight border for separation */
+    padding: 10px 15px; /* Padding for spacing */
+  }
+  
+  .sidebar .nav-link.active {
+    background-color: #495057; /* Slightly lighter background for active link */
+  }
+  
+  /* Main content styles */
+  .main {
+    background-color: #f8f9fa; /* Light background for the main content */
+    padding: 20px; /* Padding around the content */
+  }
+  
+  /* Card styles */
+  .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow for depth */
+    border: none; /* Remove default border */
+    margin-bottom: 20px; /* Spacing between cards */
+  }
+  
+  .card-title {
+    color: #343a40; /* Dark text color for card titles */
+  }
+  
+  .card-body {
+    padding: 20px; /* Spacing inside the card */
+  }
+  
+  /* Typography and spacing */
+  .h2 {
+    color: #343a40; /* Dark text color for headings */
+    margin-bottom: 20px; /* Spacing after the heading */
+  }
+  
+  .border-bottom {
+    border-bottom: 2px solid #dee2e6; /* Solid border for a clear separation */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Hide sidebar on smaller screens */
+    }
+  
+    .main {
+      padding: 10px; /* Less padding on smaller screens */
+    }
+  }
+  
