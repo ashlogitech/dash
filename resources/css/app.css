@@ -1,0 +1,36 @@
+/* This is the main CSS file that might be compiled from SASS */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  .header, .footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .main-content {
+    min-height: calc(100% - 100px); /* Adjust based on actual header/footer size */
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Add more styles as needed */
+  
